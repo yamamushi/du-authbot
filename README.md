@@ -16,7 +16,7 @@
   
   <p>
   <!--
-  --><a href="https://dualuniverse.chat"><img src="https://img.shields.io/discord/102860784329052160.svg?style=for-the-badge" alt="TravisCI"></a>
+  --><a href="https://dualuniverse.chat"><img src="https://img.shields.io/discord/184691218184273920.svg?style=for-the-badge" alt="TravisCI"></a>
   </p>
  
 </div>
