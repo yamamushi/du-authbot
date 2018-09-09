@@ -1,0 +1,17 @@
+language: go
+go:
+- "1.10.x"
+install:
+- go get github.com/yamamushi/du-authbot
+- go get -v .
+- go get -v github.com/golang/lint/golint
+- go get github.com/gordonklaus/ineffassign
+- go get -u github.com/client9/misspell/cmd/misspell
+script:
+- diff <(gofmt -d .) <(echo -n)
+- go vet -x ./...
+- golint -set_exit_status ./...
+- ineffassign ./
+- misspell . -error
+# go tests are not currently implemented so we skip this check
+#- go test -v -race ./...
