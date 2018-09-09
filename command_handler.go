@@ -409,6 +409,10 @@ func (h *CommandHandler) VerifyUser(guildID string, session mgo.Session, s *disc
 		return false
 	}
 
+	if stringInSlice("*", guildConfig.UserRoles) {
+		return true
+	}
+
 	for _, userRole := range member.Roles {
 		if stringInSlice(userRole, guildConfig.UserRoles) {
 			return true
@@ -520,6 +524,14 @@ func (h *CommandHandler) AddUserRole(rolename string, guildID string, session mg
 	guildRoles, err := s.GuildRoles(guildID)
 	if err != nil {
 		return err
+	}
+
+	if rolename == "*" {
+		if stringInSlice(rolename, guildConfig.UserRoles) {
+			return errors.New("Role already in list")
+		}
+		guildConfig.UserRoles = append(guildConfig.UserRoles, rolename)
+		return h.db.SaveGuildConfigToDB(guildConfig, session)
 	}
 
 	for _, guildRole := range guildRoles {
