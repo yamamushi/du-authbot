@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/bwmarrin/discordgo"
+	"time"
 )
 
 // Roles struct
@@ -12,66 +13,66 @@ type Roles struct {
 // CreateAllRoles function
 func (h *Roles) CreateAllRoles(s *discordgo.Session, guildID string) (err error) {
 	if err = h.CreateATVRole(s, guildID); err != nil {
-		////time.Sleep(1*time.Second)(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateKyriumFounderRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateDiamondFounderRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateEmeraldFounderRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateRubyFounderRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateSapphireFounderRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateGoldFounderRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateSilverFounderRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateBronzeFounderRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateIronFounderRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateContributorSupporterRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateSponsorSupporterRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreatePatronSupporterRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreateATVAuthorizedRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
 	if err = h.CreatePreAlphaAuthorizedRole(s, guildID); err != nil {
-		//time.Sleep(1*time.Second)
+		time.Sleep(1*time.Second)
 		return err
 	}
-	//time.Sleep(1*time.Second)
+	time.Sleep(1*time.Second)
 	err = h.CreateForumAuthorizedRole(s, guildID)
 	return err
 }
@@ -514,7 +515,7 @@ func (h *Roles) CreateDiamondFounderRole(s *discordgo.Session, guildID string) (
 
 // CreateEmeraldFounderRole function
 func (h *Roles) CreateEmeraldFounderRole(s *discordgo.Session, guildID string) (err error) {
-	_, err = getRoleIDByName(s, guildID, "Diamond Founder")
+	_, err = getRoleIDByName(s, guildID, "Emerald Founder")
 	if err != nil {
 		createdrole, err := s.GuildRoleCreate(guildID)
 		if err != nil {
@@ -529,7 +530,7 @@ func (h *Roles) CreateEmeraldFounderRole(s *discordgo.Session, guildID string) (
 
 // CreateRubyFounderRole function
 func (h *Roles) CreateRubyFounderRole(s *discordgo.Session, guildID string) (err error) {
-	_, err = getRoleIDByName(s, guildID, "Diamond Founder")
+	_, err = getRoleIDByName(s, guildID, "Ruby Founder")
 	if err != nil {
 		createdrole, err := s.GuildRoleCreate(guildID)
 		if err != nil {

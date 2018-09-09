@@ -289,6 +289,7 @@ func (h *CommandHandler) Read(s *discordgo.Session, m *discordgo.MessageCreate) 
 	if command == "rebuildroles" {
 		if !h.VerifyOwner(guildID, s, m) {
 			s.ChannelMessageSend(m.ChannelID, "This command can only be run by the server owner.")
+			return
 		}
 
 		err = h.RebuildRoles(s, guildID)
