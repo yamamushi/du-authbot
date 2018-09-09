@@ -141,7 +141,7 @@ Add a moderator role to the bot (See [FAQ](#faq) for further information):
 | allowusers | Enables or disables the ability for users to self-auth | allowusers true | 
 | adduserrole | Adds a server role as a user role for the bot (use * to allow all user roles). Without this correctly configured, user self-auth will not work (case sensitive!) | adduserrole <rolename> |
 | removeuserrole | Removes a server role as a user role for the bot | removeuserrole <rolename> |  
-| listuserroles | listuserroles | listuserroles | 
+| listuserroles | List user Roles | listuserroles | 
 | listmodroles | List moderator roles | listmodroles | 
 | rebuildroles | Recreates backer roles that may have been removed on accident | rebuildroles | 
 
