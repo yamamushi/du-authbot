@@ -13,66 +13,66 @@ type Roles struct {
 // CreateAllRoles function
 func (h *Roles) CreateAllRoles(s *discordgo.Session, guildID string) (err error) {
 	if err = h.CreateATVRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateKyriumFounderRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateDiamondFounderRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateEmeraldFounderRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateRubyFounderRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateSapphireFounderRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateGoldFounderRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateSilverFounderRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateBronzeFounderRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateIronFounderRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateContributorSupporterRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateSponsorSupporterRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreatePatronSupporterRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreateATVAuthorizedRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
 	if err = h.CreatePreAlphaAuthorizedRole(s, guildID); err != nil {
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 		return err
 	}
-	time.Sleep(1*time.Second)
+	time.Sleep(1 * time.Second)
 	err = h.CreateForumAuthorizedRole(s, guildID)
 	return err
 }
