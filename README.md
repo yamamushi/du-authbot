@@ -134,7 +134,7 @@ Add a moderator role to the bot (See [FAQ](#faq) for further information):
 | auth | Verify the backer status of a mentioned user | auth @user |
 | authall | Verifies the backer status of all users in a server | authall |
 | setcp | Sets the command prefix for the bot (default is $) | setcp $ |
-| reset | Removes backer roles from a mentioned users | resetuser @user |
+| reset | Removes backer roles from a mentioned users | reset @user |
 | resetall | Removes backer roles from all users | resetall |
 | addmodrole | Adds a server role as a moderator for the bot (case sensitive!) | addmodrole <rolename> | 
 | removemodrole | Rmoves a server role as a moderator for the bot | removemodrole <rolename | 
