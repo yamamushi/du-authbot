@@ -1,7 +1,7 @@
 <div align="center">
 
   <p>
-   <a href="https://travis-ci.org/yamamushi/du-authbot"><img src="https://img.shields.io/travis/yamamushi/github/yamamushi/du-authbot.svg?style=for-the-badge" alt="TravisCI"></a><!--
+   <a href="https://travis-ci.org/yamamushi/du-authbot"><img src="https://img.shields.io/travis/yamamushi/du-authbot.svg?style=for-the-badge" alt="TravisCI"></a><!--
    --><a href="https://GitHub.com/yamamushi/du-authbot/issues/"><img src="https://img.shields.io/github/issues/yamamushi/du-authbot.svg?style=for-the-badge" alt="TravisCI"></a><!--
 --><a href="https://github.com/Favna/Ribbon/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/favna/ribbon.svg?style=for-the-badge" alt="License"></a><!--
 -->
