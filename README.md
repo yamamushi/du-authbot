@@ -64,7 +64,7 @@ Table of Contents
 ### Setup
 
 **Note**
-Users will first need to authenticate through the [unofficial Dual Universe discord](https://dualuniverse.chat) before their backer status can be verified.
+Users will first need to authenticate through the [Official Dual Universe Discord](https://dualuniverse.chat) before their backer status can be verified.
 
 To install the bot into your Discord you can [Click Here](https://discordapp.com/oauth2/authorize?client_id=487875933014065163&scope=bot&permissions=335858752). An outline of the permissions granted is provided below:
    
